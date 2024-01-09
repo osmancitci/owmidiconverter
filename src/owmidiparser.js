@@ -80,6 +80,8 @@ function convertMidi(mid, settings={}, isCompressionEnabled=true) {
         string[] warnings:      An array containing warnings output by the script
         string[] errors:        An array containing errors output by the script
     */
+    
+    isCompressionEnabled = false;
 
     if (Object.keys(settings).length !== Object.keys(CONVERTER_SETTINGS_INFO).length) {
         settings = DEFAULT_SETTINGS;
